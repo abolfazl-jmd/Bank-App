@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <div class="login__wrapper">
+        <div class="title__wrapper">
+          <div data-set="1" class="title__option">
+            <h1 class="title">Sign up</h1>
+          </div>
+          <div data-set="2" class="title__option">
+            <h1 class="title">Login</h1>
+          </div>
+        </div>
+
+        <form data-set="1" class="form signup__form">
+          <input
+            type="text"
+            class="inputs signup__username"
+            placeholder="Username"
+          />
+          <span class="error singup__username__error"></span>
+
+          <input
+            class="inputs signup__email"
+            type="email"
+            placeholder="Email"
+          />
+
+          <input
+            type="password"
+            class="inputs signup__password"
+            placeholder="Password"
+          />
+          <span class="error signup__password__error"></span>
+
+          <button class="btn signin--btn">Sign in</button>
+        </form>
+
+        <form data-set="2" class="form login__form form--deactive">
+          <input type="text" class="inputs username" placeholder="Username" />
+          <span class="error username__error"></span>
+
+          <input
+            type="password"
+            class="inputs password"
+            placeholder="Password"
+          />
+          <span class="error password__error"></span>
+
+          <button class="btn submit--btn">Log in</button>
+        </form>
+      </div>
+
+      <!-- ********************* BANK APP SECTION ******************** -->
+      <div class="main__caontainer hidden">
+        <!-- **************************** NAVBAR SECTION ********************* -->
+
+        <nav class="navbar">
+          <div data-set="1" class="options transfer--option">
+            <a href="#" class="option__text transfer--text">Transfer</a>
+            <i class="uil uil-exchange icons transfer--icon"></i>
+          </div>
+          <div data-set="2" class="options loan--option">
+            <a href="#" class="option__text loan--text">Loan</a>
+            <i class="uil uil-money-bill icons loan--icon"></i>
+          </div>
+          <div data-set="3" class="options exit--option">
+            <a href="#" class="option__text exit--text">Exit</a>
+            <i class="uil uil-signout icons exit--icon"></i>
+          </div>
+        </nav>
+
+        <!-- **************************** HEADER SECTION ********************* -->
+
+        <header class="header__section">
+          <div class="image__wrapper">
+            <img src="" alt="user" class="user__image" />
+          </div>
+
+          <div class="date__container">
+            <div class="date">2020 / 11 / 02</div>
+            <div class="time"></div>
+          </div>
+        </header>
+
+        <!-- ****************************** BALANCE SECTION ********************* -->
+        <section class="balance__section">
+          <h1 class="welcme__msg"></h1>
+          <h1 class="balance"></h1>
+        </section>
+
+        <!-- ***************************** MOVEMENTS SETION ************************** -->
+        <section class="movements__section">
+          <div class="movements"></div>
+
+          <!-- ********************** ACTIONS SECTION (TRANSFER/LOAN/EXIT) MODALS ********************** -->
+          <div data-set="1" class="modals transfer__modal hidden">
+            <div class="title__section">
+              <h2 class="modal__title">Transfer</h2>
+              <i class="uil uil-times-circle icons icon--close"></i>
+            </div>
+
+            <input
+              type="text"
+              class="inputs transfer__input--username"
+              placeholder="Account Name"
+            />
+            <input
+              type="number"
+              class="inputs transfer__input--amount"
+              placeholder="Amount"
+            />
+            <span class="error transfer__error"></span>
+
+            <button class="btn modal__transfer--submit modal--btn">
+              Transfer
+            </button>
+          </div>
+
+          <div data-set="2" class="modals loan__modal hidden">
+            <div class="title__section">
+              <h2 class="modal__title">Loan</h2>
+              <i class="uil uil-times-circle icons icon--close"></i>
+            </div>
+
+            <input
+              type="number"
+              class="inputs loan__input--amount"
+              placeholder="Amount"
+            />
+            <span class="error loan__error"></span>
+
+            <button class="btn modal__loan--submit modal--btn">Get Loan</button>
+          </div>
+
+          <div data-set="3" class="modals exit__modal hidden">
+            <div class="title__section">
+              <h2 class="modal__title">Log Out</h2>
+              <i class="uil uil-times-circle icons icon--close"></i>
+            </div>
+
+            <input
+              type="text"
+              class="inputs exit__input--username"
+              placeholder="Account Name"
+            />
+            <input
+              type="password"
+              class="inputs exit__input--password"
+              placeholder="Password"
+            />
+
+            <button class="btn modal__exit--submit modal--btn">Log Out</button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
