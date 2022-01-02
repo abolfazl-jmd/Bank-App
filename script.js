@@ -284,10 +284,9 @@ const updateUI = function (acc) {
   displayBalance(acc);
 };
 
-updateUI(account3);
 // --------------------------------- SUBMIT BUTTON FUNC ---------------------------
 // * We define a global ariable because we need it in other situations
-let currentAccount = account4;
+let currentAccount;
 
 // ** SIMPLE LOGIN VALIDATION
 const showBankPage = function (e) {
